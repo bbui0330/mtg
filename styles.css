@@ -90,6 +90,14 @@ a.TabLink,
     background: #6272A4 !important;
 }
 
+button:hover{
+    text-indent: 5px;
+    appearance: none !important;
+    -moz-appearance: none !important;
+    -webkit-appearance: none !important;
+    background: #BD93F9 !important;
+}
+
 textarea {
     appearance: none !important;
     -moz-appearance: none !important;
@@ -114,6 +122,16 @@ a.active *,
     color: rgba(139, 233, 253, 1) !important;
 }
 
+.outer {
+    display: flex;
+    flex-direction: column; /* Align children vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    height: 100vh; /* Full height of viewport */
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in height */
+}
+
 .container {
     background-color: #282A36 !important;
     padding: 20px;
@@ -122,8 +140,15 @@ a.active *,
     text-align: center;
     width: 300px;
     margin: 20px;
+    float: left;
+    width: 50%;
+    padding: 20px;
 }
 
+::placeholder {
+    color: #282A36;
+    opacity: 1;
+}
 input[type="text"] {
     width: 80px;
     padding: 8px;
@@ -132,6 +157,7 @@ input[type="text"] {
     border-radius: 5px;
     border: 1px solid #ccc;
     text-align: center;
+    color: white
 }
 
 button {
@@ -155,7 +181,7 @@ button:disabled {
     color: #333;
 }
 
-#list {
+#listContainer {
     margin-top: 20px;
     font-size: 18px;
     color: #333;
