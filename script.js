@@ -76,6 +76,8 @@ submitButton.addEventListener('click', function () {
     const n = numField.value;
     document.getElementById('output').textContent = `You entered: ${c} and ${n}`;
     scryfall(c, n);
+    charField.value = null
+    numField.value = null
 });
 
 // Handle Export button click
