@@ -5,6 +5,7 @@ const charField = document.getElementById('charField');
 const numField = document.getElementById('numField');
 const submitButton = document.getElementById('submitButton');
 const exportButton = document.getElementById('exportButton');
+const clearButton = document.getElementById('clearButton');
 var set = "";
 var id = "";
 
@@ -91,6 +92,15 @@ exportButton.addEventListener('click', function () {
     }
     console.log(text);
     navigator.clipboard.writeText(text);
+});
+
+// Handle Clear button click
+clearButton.addEventListener('click', function () {
+    var confirmed = confirm("Clear Current List?");
+    if (confirmed) {
+        const listContainer = document.getElementById('listContainer');
+        listContainer.innerHTML = '';
+    }
 });
 
 function scryfall(set, id) {
