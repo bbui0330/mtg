@@ -78,6 +78,7 @@ submitButton.addEventListener('click', function () {
     scryfall(c, n);
     charField.value = null
     numField.value = null
+    charField.focus();
 });
 
 // Handle Export button click
