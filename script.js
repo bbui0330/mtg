@@ -103,6 +103,8 @@ clearButton.addEventListener('click', function () {
     if (confirmed) {
         const listContainer = document.getElementById('listContainer');
         listContainer.innerHTML = '';
+        card.clear;
+        quantity.clear;
     }
 });
 
